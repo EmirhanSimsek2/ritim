@@ -1,8 +1,13 @@
 {
   "name": "ritim",
   "version": "2.8.0",
+  "description": "Personal study, day-planning, habit, and daily reflection tracker built with React 19, TypeScript, Cloudflare Workers, and Cloudflare D1.",
+  "license": "MIT",
   "private": true,
   "type": "module",
+  "engines": {
+    "node": ">=24"
+  },
   "scripts": {
     "build": "tsc --noEmit && vite build",
     "dev": "wrangler dev --ip 127.0.0.1 --port 5174 --persist-to .wrangler/state",

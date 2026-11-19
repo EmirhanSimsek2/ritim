@@ -40,6 +40,8 @@ See [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) for details on the data model, 
 ```
 
 > **Course Configuration:** Semester courses are currently defined in `COURSES` inside [`src/lib/model.ts`](src/lib/model.ts) alongside the term anchor in [`src/lib/exams.ts`](src/lib/exams.ts).
+>
+> **App Icon Generation:** [`scripts/generate-app-icons.mjs`](scripts/generate-app-icons.mjs) imports `sharp` (intentionally omitted from `package.json`); install it temporarily (`npm install --no-save sharp`) if you want to regenerate PNG icons from [`public/favicon.svg`](public/favicon.svg).
 
 ## Local Development
 
