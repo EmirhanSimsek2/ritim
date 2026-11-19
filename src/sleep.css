@@ -1,0 +1,6 @@
+.sleep-date-choices{display:flex;flex-wrap:wrap;gap:8px;margin:-4px 0 14px}
+.sleep-date-choices button{border:1px solid var(--line);border-radius:8px;padding:9px 12px;background:var(--paper);color:var(--ink);font-size:11px;min-height:44px}
+.sleep-date-choices button[aria-pressed=true]{background:var(--light);border-color:var(--green)}
+.sleep-preview{background:var(--light);border:1px solid var(--line);border-radius:10px;padding:13px 15px;margin-bottom:12px;font-size:12px;color:var(--ink);line-height:1.7}
+.sleep-preview strong{font-weight:600}.sleep-preview p{margin:0}.sleep-preview strong+p{margin-top:4px}
+.sleep-fields input[type=date]{min-width:0;max-width:100%}

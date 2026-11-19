@@ -1,0 +1,75 @@
+/* Product surfaces and accent roles. Course/category/status identities stay distinct. */
+:root[data-palette]{color-scheme:light;--bg:#f1f3f0;--paper:#f6f8f5;--sidebar:#e8ece6;--ink:#344239;--muted:#5b695f;--line:#d7ddd4;--green:#486b51;--accent-ink:#fff;--light:#e3eae0;--field-bg:#f4f6f2;--accent-line:#a6b7a3;--accent-hover:#3c5c44;--ring:#637f66;--progress-track:#dfe5dc}
+:root[data-palette][data-theme=dark]{color-scheme:dark;--bg:#292e2b;--paper:#2e3430;--sidebar:#262a28;--ink:#d7dfd9;--muted:#a9b4ac;--line:#424b45;--green:#a4c5ac;--accent-ink:#223027;--light:#36443a;--field-bg:#252b27;--accent-line:#5e7263;--accent-hover:#bad4c0;--ring:#a4c5ac;--progress-track:#3d4740}
+:root[data-palette=ocean]{--bg:#f2f6fc;--paper:#fff;--sidebar:#e8eff9;--ink:#152943;--muted:#51647e;--line:#d5e0ef;--green:#235db6;--accent-ink:#fff;--light:#e0ebfc;--field-bg:#f7faff;--accent-line:#aac3e6;--accent-hover:#194c99;--ring:#5285cd;--progress-track:#e0e7f0}
+:root[data-palette=ocean][data-theme=dark]{--bg:#111a29;--paper:#1b293d;--sidebar:#142033;--ink:#e4edfa;--muted:#b3c2d9;--line:#354761;--green:#87b8ff;--accent-ink:#102641;--light:#263f62;--field-bg:#142033;--accent-line:#5e82b4;--accent-hover:#a7ccff;--ring:#87b8ff;--progress-track:#314661}
+:root[data-palette=lavender]{--bg:#f2f0f5;--paper:#f8f6fa;--sidebar:#ece8f0;--ink:#41394b;--muted:#6b6276;--line:#ddd7e4;--green:#6a587f;--accent-ink:#fff;--light:#e9e3ef;--field-bg:#f5f2f8;--accent-line:#b9acc8;--accent-hover:#58486b;--ring:#867297;--progress-track:#e2dce9}
+:root[data-palette=lavender][data-theme=dark]{--bg:#2d2932;--paper:#322e38;--sidebar:#29262e;--ink:#ddd7e2;--muted:#b3aaba;--line:#4a4350;--green:#b9a9d0;--accent-ink:#2d2636;--light:#40384b;--field-bg:#29262e;--accent-line:#6b6078;--accent-hover:#ccbddf;--ring:#b9a9d0;--progress-track:#433c4a}
+:root[data-palette=amber]{--bg:#f4f1ed;--paper:#faf7f3;--sidebar:#eee8e1;--ink:#4b4136;--muted:#6d6257;--line:#e0d8ce;--green:#7a6248;--accent-ink:#fff;--light:#ece4d9;--field-bg:#f7f3ee;--accent-line:#c2b09a;--accent-hover:#66513c;--ring:#988064;--progress-track:#e6ddd2}
+:root[data-palette=amber][data-theme=dark]{--bg:#302c28;--paper:#35312d;--sidebar:#2c2825;--ink:#e1dbd4;--muted:#b8aea3;--line:#4d463f;--green:#cdb293;--accent-ink:#30261d;--light:#483d32;--field-bg:#2b2824;--accent-line:#776753;--accent-hover:#ddc4a7;--ring:#cdb293;--progress-track:#49413a}
+:root[data-palette=vscode]{--bg:#f3f3f3;--paper:#fff;--sidebar:#e8e8e8;--ink:#333;--muted:#545d68;--line:#d4d4d4;--green:#005a9e;--accent-ink:#fff;--light:#e1ecf5;--field-bg:#fafafa;--accent-line:#8dacc7;--accent-hover:#004578;--ring:#005a9e;--progress-track:#ddd}
+:root[data-palette=vscode][data-theme=dark]{--bg:#282c34;--paper:#2d323b;--sidebar:#24282f;--ink:#d7dae0;--muted:#a6adba;--line:#414752;--green:#75beff;--accent-ink:#102438;--light:#323f50;--field-bg:#23272e;--accent-line:#566578;--accent-hover:#9dd0ff;--ring:#75beff;--progress-track:#3b414b}
+:root[data-palette=youtube]{--bg:#f9f9f9;--paper:#fff;--sidebar:#fff;--ink:#0f0f0f;--muted:#606060;--line:#dedede;--green:#272727;--accent-ink:#fff;--light:#eaeaea;--field-bg:#fff;--accent-line:#929292;--accent-hover:#444;--ring:#606060;--progress-track:#e5e5e5}
+:root[data-palette=youtube][data-theme=dark]{--bg:#0f0f0f;--paper:#212121;--sidebar:#0f0f0f;--ink:#f1f1f1;--muted:#aaa;--line:#3f3f3f;--green:#f1f1f1;--accent-ink:#0f0f0f;--light:#303030;--field-bg:#121212;--accent-line:#626262;--accent-hover:#d9d9d9;--ring:#aaa;--progress-track:#3f3f3f}
+
+:root[data-palette] .sidebar{background:var(--sidebar)}
+:root[data-palette] .brand,:root[data-palette] h1,:root[data-palette] h2,:root[data-palette] h3{color:var(--ink)}
+:root[data-palette] .brand-mark,:root[data-palette] .primary,:root[data-palette] .load-screen button{background:var(--green);color:var(--accent-ink)}
+:root[data-palette] .primary:hover{background:var(--accent-hover)}
+:root[data-palette] .primary{box-shadow:0 3px 10px color-mix(in srgb,var(--green) 12%,transparent)}
+:root[data-palette] .sidebar .nav-item{color:var(--muted)}
+:root[data-palette] .sidebar .nav-item:hover,:root[data-palette] .sidebar .nav-item.active{background:var(--light);color:var(--green)}
+:root[data-palette] .sidebar-note,:root[data-palette] .profile>span,:root[data-palette] .onboarding,:root[data-palette] .focus-strip,:root[data-palette] .goal-intro,:root[data-palette] .reflection,:root[data-palette] .manual-card,:root[data-palette] .daily-note,:root[data-palette] .daily-targets{background:var(--light);border-color:var(--line);color:var(--ink)}
+:root[data-palette] .sidebar-note p,:root[data-palette] .profile small,:root[data-palette] .profile>svg,:root[data-palette] .topbar,:root[data-palette] .crumb,:root[data-palette] .nav-label,:root[data-palette] .brand small{color:var(--muted)}
+:root[data-palette] .secondary{background:var(--paper);border-color:var(--accent-line);color:var(--green)}
+:root[data-palette] .secondary:hover,:root[data-palette] .icon-button:hover{background:var(--light);color:var(--green)}
+:root[data-palette] .text-button,:root[data-palette] .entry-time,:root[data-palette] .goal-row>strong,:root[data-palette] .goal-total strong,:root[data-palette] .icon-button,:root[data-palette] .habit-home-link,:root[data-palette] .learning-details summary{color:var(--green)}
+:root[data-palette] .stat-card,:root[data-palette] .card,:root[data-palette] .modal{background:var(--paper);border-color:var(--line)}
+:root[data-palette] .stat-card.green .stat-icon,:root[data-palette] .onboarding-icon,:root[data-palette] .focus-strip-icon,:root[data-palette] .goal-illustration{background:var(--light);color:var(--green)}
+:root[data-palette] .onboarding strong,:root[data-palette] .reflection h2,:root[data-palette] .card-heading>svg,:root[data-palette] .wellbeing-line svg{color:var(--green)}
+:root[data-palette] .pill,:root[data-palette] .timer-badge,:root[data-palette] .tags>span,:root[data-palette] .is-today button{background:var(--light);border-color:var(--accent-line);color:var(--green)}
+:root[data-palette] .tiny-dot,:root[data-palette] .live-dot,:root[data-palette] .green-dot,:root[data-palette] .bar-study{background:var(--green)}
+:root[data-palette] .bar-stack,:root[data-palette] .segmented{background:var(--progress-track)}
+:root[data-palette] .segmented .selected{background:var(--light);color:var(--green)}
+:root[data-palette] .field input,:root[data-palette] .field select,:root[data-palette] .field textarea{background:var(--field-bg);border-color:var(--accent-line);color:var(--ink)}
+:root[data-palette] .field input::placeholder,:root[data-palette] .field textarea::placeholder{color:var(--muted)}
+:root[data-palette] .learning-details,:root[data-palette] .calendar-item{border-color:var(--line)}
+:root[data-palette] .learning-details summary>span{color:var(--muted)}
+:root[data-palette] .exam-date,:root[data-palette] th{background:var(--light);color:var(--green)}
+:root[data-palette] .exam-date{border-color:var(--line)}
+:root[data-palette] .daily-note p{color:var(--muted)}
+:root[data-palette] .entry-row,:root[data-palette] .exam,:root[data-palette] .checkin-row,:root[data-palette] .wellbeing-line,:root[data-palette] td,:root[data-palette] .goal-row,:root[data-palette] .chart-legend,:root[data-palette] .habit-goal{border-color:var(--line)}
+:root[data-palette] .stat-card>p,:root[data-palette] .card-heading p,:root[data-palette] .page-heading p,:root[data-palette] .checkin-row small,:root[data-palette] .entry-description>span,:root[data-palette] .entry-description>small,:root[data-palette] .exam p,:root[data-palette] .exam>div>small,:root[data-palette] .helper,:root[data-palette] .field small,:root[data-palette] .field>span,:root[data-palette] .chart-day>small,:root[data-palette] .chart-day button,:root[data-palette] .chart-day button span,:root[data-palette] .chart-legend,:root[data-palette] .chart-legend small,:root[data-palette] .eyebrow,:root[data-palette] .little-label,:root[data-palette] .stat-label,:root[data-palette] .course-card>small,:root[data-palette] .course-card>div span,:root[data-palette] .exam-detail p,:root[data-palette] .exam-detail>small,:root[data-palette] .goal-intro p,:root[data-palette] .reflection p,:root[data-palette] .reflection small,:root[data-palette] .habit-goal p,:root[data-palette] .wellbeing-line small,:root[data-palette] td small,:root[data-palette] .muted,:root[data-palette] .onboarding p,:root[data-palette] .date-nav input,:root[data-palette] .sync>span,:root[data-palette] footer,:root[data-palette] .focus-aside p,:root[data-palette] .timer-caption,:root[data-palette] .focus-strip div>span,:root[data-palette] .empty,:root[data-palette] .import-tools,:root[data-palette] .goal-total{color:var(--muted)}
+:root[data-palette] progress{background:var(--progress-track);accent-color:var(--green)}
+:root[data-palette] progress::-webkit-progress-bar{background:var(--progress-track)}
+:root[data-palette] progress::-webkit-progress-value{background:var(--green)}
+:root[data-palette] progress::-moz-progress-bar{background:var(--green)}
+:root[data-palette] .toast{background:var(--green);color:var(--accent-ink)}
+:root[data-palette] .check-circle{border-color:var(--accent-line);color:var(--green)}
+:root[data-palette] .check-circle.done{background:var(--light)}
+:root[data-palette] .habit-symbol,:root[data-palette] .habit-welcome-icon{background:var(--light);color:var(--green)}
+:root[data-palette] .habit-small-step,:root[data-palette] .habit-day-summary{background:var(--light);border-color:var(--line);color:var(--ink)}
+:root[data-palette] .habit-small-step>span,:root[data-palette] .habit-day-summary p,:root[data-palette] .habits-welcome>p,:root[data-palette] .habit-templates small,:root[data-palette] .habit-cue>small,:root[data-palette] .habit-cue>p,:root[data-palette] .habit-calendar small,:root[data-palette] .habit-details,:root[data-palette] .habit-review p,:root[data-palette] .habit-home-link span,:root[data-palette] .habit-weekday-picker legend,:root[data-palette] .habit-paused-note{color:var(--muted)}
+:root[data-palette] .habit-filter-buttons>button{color:var(--muted)}
+:root[data-palette] .habit-filter-buttons>.selected{background:var(--light);color:var(--green)}
+:root[data-palette] .habit-calendar .current small{color:var(--green)}
+:root[data-palette] .habit-calendar .current span{outline-color:var(--green)}
+:root[data-palette] .habit-calendar .unknown span{background:var(--paper);border-color:var(--accent-line);color:var(--muted)}
+:root[data-palette] .habit-calendar .off span{background:transparent;color:var(--muted)}
+:root[data-palette] .habit-weekday-picker span{background:var(--field-bg);border-color:var(--accent-line);color:var(--ink)}
+:root[data-palette] .habit-weekday-picker input:checked+span{background:var(--green);border-color:var(--green);color:var(--accent-ink)}
+:root[data-palette] .habits-filters>input{background:var(--field-bg);border-color:var(--accent-line);color:var(--ink)}
+:root[data-palette] .timeline-intro>svg,:root[data-palette] .timeline-column-headings svg,:root[data-palette] .timeline-agenda>button>span{color:var(--green)}
+:root[data-palette] .timer-display,:root[data-palette] .focus-strip>span:last-child,:root[data-palette] .course-card>div strong{color:var(--green)}
+:root[data-palette] button:focus-visible,:root[data-palette] a:focus-visible,:root[data-palette] input:focus-visible,:root[data-palette] select:focus-visible,:root[data-palette] textarea:focus-visible,:root[data-palette] summary:focus-visible{outline-color:var(--ring)}
+:root[data-palette] .danger,:root[data-palette] .import-error{color:#a13e30}
+:root[data-palette][data-theme=dark] .danger,:root[data-palette][data-theme=dark] .import-error{color:#f2b4a6}
+
+.appearance-controls{display:flex;align-items:center;gap:7px;flex-shrink:0}
+.login-page{grid-template-columns:minmax(0,1fr)}
+.login-card{min-width:0;justify-self:center}
+.sync .appearance-controls .theme-control{margin-right:0}
+.palette-control select{max-width:82px}
+@media(max-width:720px){.appearance-controls{gap:5px}.appearance-controls .theme-control{gap:4px;padding:4px 5px}.appearance-controls .theme-control select{font-size:11px;max-width:74px}.login-page{padding-top:82px}.login-theme{z-index:1}}
+@media(max-width:480px){.topbar{padding-inline:14px}.topbar>span{font-size:9px;flex-shrink:1;min-width:0}.topbar .crumb{display:none}.sync{gap:5px}.sync .appearance-controls{gap:4px}}
+@media(forced-colors:active){:root[data-palette] .primary,:root[data-palette] .theme-control,:root[data-palette] .secondary{border:1px solid ButtonText}}

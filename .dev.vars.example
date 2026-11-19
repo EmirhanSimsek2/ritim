@@ -1,0 +1,4 @@
+# SHA-256 hex digest of your personal login key.
+# Generate both a random key and its digest with:
+#   node scripts/generate-login-key.mjs
+LOGIN_KEY_HASH=

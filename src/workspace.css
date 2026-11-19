@@ -1,0 +1,66 @@
+.sidebar { overflow-y: auto; }
+.sidebar .mobile-more { display: none; }
+.sync-status { min-height: 44px; padding: 8px; border-radius: 8px; font-size: 12px; color: var(--muted); }
+.sync-status > span, .settings-sync { display: flex; align-items: center; gap: 8px; }
+.sync-status:hover { background: var(--light); }
+.sync-failed { color: #a13e30; }
+[data-theme=dark] .sync-failed { color: #f2b4a6; }
+.daily-records .date-toolbar { padding-bottom: 16px; border-bottom: 1px solid var(--line); margin-bottom: 20px; }
+.daily-records .date-nav { flex-wrap: wrap; }
+.daily-records .date-nav input { min-height: 44px; font-size: 14px; }
+.daily-records .empty { padding: 20px 12px; }
+.button, .icon-button, .text-button { min-height: 44px; }
+.icon-button { min-width: 44px; }
+.stat-card > p { white-space: normal; overflow: visible; overflow-wrap: anywhere; }
+.settings-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
+.settings-grid > .card { margin-bottom: 0; min-width: 0; }
+.settings-grid .appearance-controls { flex-wrap: wrap; gap: 12px; }
+.settings-grid .theme-control { min-height: 44px; padding: 8px 12px; }
+.settings-grid .theme-control select { font-size: 14px; max-width: none; }
+.settings-data > .button, .settings-data > .import-control { margin-bottom: 14px; }
+.settings-data > a { display: flex; width: fit-content; white-space: normal; }
+.settings-grid .helper { margin-block: 14px; }
+.settings-sync { margin-bottom: 14px; font-size: 13px; }
+.reading-total { margin-bottom: 12px; font-size: 20px; font-weight: 600; }
+.reading-book { margin-bottom: 20px; color: var(--muted); overflow-wrap: anywhere; }
+.section-menu { display: grid; gap: 12px; }
+.section-menu .button { justify-content: flex-start; white-space: normal; text-align: left; padding: 16px; }
+.section-menu .button > svg:last-child { margin-left: auto; }
+@media (max-width: 1100px) {
+  .stats-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .dashboard-grid { grid-template-columns: minmax(0, 1fr); }
+}
+@media (max-width: 940px) {
+  .settings-grid { grid-template-columns: minmax(0, 1fr); }
+}
+@media (max-width: 720px) {
+  .planner-home-link { display: none; }
+  .sidebar { height: calc(72px + env(safe-area-inset-bottom)); padding: 6px 8px calc(6px + env(safe-area-inset-bottom)); overflow: visible; }
+  .sidebar .secondary-nav { display: none; }
+  .sidebar .planner-nav { order: 1; }
+  .sidebar .mobile-more { display: flex; order: 2; }
+  .sidebar .nav-item { min-width: 0; height: 58px; }
+  .sidebar .nav-item > span { font-size: 10px; white-space: normal; text-align: center; line-height: 1.2; }
+  .main { padding-bottom: calc(72px + env(safe-area-inset-bottom)); }
+  .topbar { min-height: 56px; height: auto; }
+  .sync-status { font-size: 11px; }
+  .sync .icon-button { width: 44px; }
+  .page-content { padding-top: 20px; }
+  .page-heading { margin-bottom: 20px; }
+  .page-heading h1 { font-size: 26px; }
+  .daily-records .date-toolbar { gap: 10px; align-items: flex-start; }
+  .daily-records .date-toolbar > .button { width: 100%; font-size: 13px; }
+  .date-nav .icon-button { width: 44px; }
+  .daily-records .date-nav input { max-width: 150px; }
+  .settings-grid { gap: 18px; }
+  .card-heading { flex-wrap: wrap; }
+  .record-notices { bottom: calc(84px + env(safe-area-inset-bottom)); }
+  .modal .form-grid { grid-template-columns: minmax(0, 1fr); }
+  .chart-day button, .segmented button, .timeline-jump button, .habit-filter-buttons > button { min-height: 44px; }
+  .habit-weekday-picker span { width: auto; min-width: 44px; height: 44px; padding-inline: 6px; }
+}
+@media (max-height: 600px) and (min-width: 721px) {
+  .sidebar { padding-top: 16px; }
+  .brand { margin-bottom: 16px; }
+  .nav-item { margin-bottom: 2px; padding-block: 10px; }
+}

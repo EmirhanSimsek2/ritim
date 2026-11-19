@@ -1,0 +1,26 @@
+.learnings-card { min-width: 0; }
+.focus-strip + .learnings-card { margin-top: 18px; }
+.learning-form { display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, 1fr) auto; gap: 12px; align-items: end; }
+.learning-form .field { margin: 0; }
+.learning-form .field input, .learning-form .field select { min-height: 44px; min-width: 0; max-width: 100%; }
+.learning-form-actions, .learning-actions { display: flex; gap: 6px; flex-wrap: wrap; }
+.learnings-card .button, .learnings-card .icon-button { min-width: 44px; min-height: 44px; }
+.learning-list { list-style: none; padding: 0; margin: 14px 0 0; }
+.learning-list > li { display: flex; gap: 12px; align-items: flex-start; padding: 12px 0; border-top: 1px solid var(--line); }
+.learning-content { flex: 1; min-width: 0; overflow-wrap: anywhere; }
+.learning-content p { font-size: 13px; line-height: 1.6; }
+.learning-tag { display: inline-block; max-width: 100%; margin-top: 6px; padding: 3px 8px; border-radius: 6px; background: var(--light); color: var(--ink); font-size: 11px; overflow-wrap: anywhere; }
+.learning-actions { flex: 0 0 auto; }
+.learning-day { margin-top: 20px; }
+.learning-day h3 { font-size: 13px; font-weight: 600; margin: 0 0 6px; }
+@media (max-width: 940px) {
+  .learning-form { grid-template-columns: minmax(0, 1fr) auto; }
+  .learning-text { grid-column: 1 / -1; }
+}
+@media (max-width: 480px) {
+  .learning-form { grid-template-columns: minmax(0, 1fr); }
+  .learning-form-actions { width: 100%; }
+  .learning-form-actions .button { flex: 1; }
+  .learning-list > li { flex-wrap: wrap; }
+  .learning-actions { width: 100%; justify-content: flex-end; }
+}
