@@ -5,6 +5,12 @@ A full-stack personal study, day-planning, habit, and daily reflection tracker b
 > **Live Interactive Preview (No Login Required):** [ritim-habit-tracker.sotm-proje-merkezi.workers.dev/onizleme](https://ritim-habit-tracker.sotm-proje-merkezi.workers.dev/onizleme)  
 > *Note: The application UI is in Turkish, designed for a personal academic workflow. The `/onizleme` preview route runs entirely in-memory with sample data and resets on reload.*
 
+## Screenshots
+
+| Day View (`Günüm`) | Day Planner (`Gün planı`) | Weekly Overview (`Haftalık bakış`) |
+| --- | --- | --- |
+| ![Day View](docs/screenshots/day-view.png) | ![Day Planner](docs/screenshots/day-planner.png) | ![Weekly Overview](docs/screenshots/weekly-overview.png) |
+
 ## Features
 
 - **Day View (`Günüm`)**: Log study sessions (duration, topic, method, self-rated focus, learning outcome, attempted/correct questions, obstacles) and untimed/timed non-study activities, plus sleep intervals, morning/evening mood & energy, book reading, and daily learnings (*"Bugün neler öğrendim?"*).
